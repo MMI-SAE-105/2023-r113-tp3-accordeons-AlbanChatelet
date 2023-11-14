@@ -13,12 +13,14 @@
       <section>
         <div x-data="{ open: false }">
           <button @click="open = ! open">Bouton 1</button>
-        
-          <div x-show="open">
             
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nulla exercitationem culpa veritatis vero iste maxime.
+        
+              <div x-show="open">
+                  <span x-show="open" x-transition.duration.500ms>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nulla exercitationem culpa veritatis vero iste maxime.
               Veniam aperiam obcaecati vitae possimus. Officiis nemo, explicabo earum similique beatae quibusdam odio quo!</p>
-          </div>
+                  </span>
+              </div>
         </div>
         
         
@@ -28,10 +30,12 @@
           <button @click="open = ! open">Bouton 2</button>
         
           <div x-show="open">
+            <span x-show="open" x-transition.duration.500ms>
             
-            <p>Molestias repellendus harum, quibusdam tempore possimus officia atque quaerat at? Accusantium rerum magnam nesciunt
+              <p>Molestias repellendus harum, quibusdam tempore possimus officia atque quaerat at? Accusantium rerum magnam nesciunt
               aliquam! Sapiente nesciunt optio officiis? Repudiandae nostrum aspernatur error provident consequuntur quo dolorum!
               Reprehenderit, nulla laboriosam.</p>   
+            </span>
           </div>
         </div>
       </section>
@@ -40,9 +44,10 @@
           <button @click="open = ! open">Bouton 3</button>
         
           <div x-show="open">
-        
-            <p>Eveniet, quam non praesentium, fuga beatae eum laboriosam itaque culpa, nisi illum quos. Quae dolor quis vero rerum
-              suscipit, architecto cumque modi? Qui dolor facere nostrum quod quidem, odio quaerat.</p>
+            <span x-show="open" x-transition.duration.500ms>      
+              <p>Eveniet, quam non praesentium, fuga beatae eum laboriosam itaque culpa, nisi illum quos. Quae dolor quis vero rerum
+              suscipit, architecto cumque modi? Qui dolor facere nostrum quod quidem, odio quaerat.</p>   
+            </span>
           </div>
         </div>
         
