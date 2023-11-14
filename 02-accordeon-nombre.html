@@ -8,10 +8,42 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
-    <div x-data="{ open: false }">
-      <span x-show="open" x-transition.scale.origin.top>
-        <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-      </span>
-    </div>
+    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    
+        <div x-data="{ open: 1 }">
+          <section>
+            
+              <span x-show="open === 1" x-transition.scale.origin.top>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestias, exercitationem delectus rerum natus necessitatibus. 
+                  Veritatis corporis iste ducimus. Numquam molestias excepturi autem officia labore in aspernatur quod quae ipsum.</p>
+
+              </span>
+            
+          </section>
+          <section>
+          
+            <span x-show="open === 2" x-transition.scale.origin.top>
+          
+              <p>Voluptatibus dolorem adipisci hic porro eius, iusto voluptate quia, iure maiores officia ut nam error voluptas minima et
+              totam minus enim numquam! Nihil ducimus dolorem vero vel, veniam iusto ab
+              </p>
+          
+            </span>
+          
+          </section>
+          <section>
+          
+            <span x-show="open === 3" x-transition.scale.origin.top>
+          
+              <p>At quisquam non qui ut id numquam tempore eum deleniti voluptatem rerum sed culpa, perferendis neque voluptates nostrum
+              nemo minus officia quis quibusdam ipsam expedita repellendus laborum officiis. Quas, harum.
+              </p>
+          
+            </span>
+          
+          
+          </section>
+        </div>
   </body>
 </html>
