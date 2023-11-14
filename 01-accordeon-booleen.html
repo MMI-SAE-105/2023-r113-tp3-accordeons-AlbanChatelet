@@ -18,6 +18,7 @@
             
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nulla exercitationem culpa veritatis vero iste maxime.
               Veniam aperiam obcaecati vitae possimus. Officiis nemo, explicabo earum similique beatae quibusdam odio quo!</p>
+          </div>
         </div>
         
         
@@ -32,13 +33,15 @@
               aliquam! Sapiente nesciunt optio officiis? Repudiandae nostrum aspernatur error provident consequuntur quo dolorum!
               Reprehenderit, nulla laboriosam.</p>   
           </div>
-        
+        </div>
       </section>
-      <section x-data="{ open: false }">
-        <button @click="open = ! open">Bouton 3</button>
-        <div x-show="open">
+      <section>
+        <div x-data="{ open: false }"></div>
+          <button @click="open = ! open">Bouton 3</button>
+          <div x-show="open">
           <p>Eveniet, quam non praesentium, fuga beatae eum laboriosam itaque culpa, nisi illum quos. Quae dolor quis vero rerum
             suscipit, architecto cumque modi? Qui dolor facere nostrum quod quidem, odio quaerat.</p>
+            </div>
         </div> 
       </section>
     </accordeon>
