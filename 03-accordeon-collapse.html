@@ -8,7 +8,44 @@
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
-  <body>
+    <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
+
+    <div x-data="{ expanded: false }">
+      <section>
+        <button @click="expanded = ! expanded">1</button>
+        <p x-show="expanded" x-collapse>Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Laboriosam molestias, exercitationem delectus rerum
+          natus necessitatibus.
+          Veritatis corporis iste ducimus. Numquam molestias excepturi autem officia labore in aspernatur quod quae
+          ipsum.</p>
+    
+    
+    
+      </section>
+      <section>
+        <button @click="expanded = ! expanded">2</button>
+    
+        <p x-show="expanded" x-collapse>Voluptatibus dolorem adipisci hic porro eius, iusto
+          voluptate quia, iure maiores officia ut nam error
+          voluptas minima et
+          totam minus enim numquam! Nihil ducimus dolorem vero vel, veniam iusto ab
+        </p>
+    
+    
+      </section>
+      <section>
+        <button @click="expanded = ! expanded">3</button>
+        <p x-show="expanded" x-collapse>At quisquam non qui ut id numquam tempore eum deleniti
+          voluptatem rerum sed culpa, perferendis neque
+          voluptates nostrum
+          nemo minus officia quis quibusdam ipsam expedita repellendus laborum officiis. Quas, harum.
+        </p>
+    
+    
+    
+    
+      </section>
+    </div>
   </body>
 </html>
