@@ -19,7 +19,7 @@
 
     <div>
       <section x-data="{ expanded: false }">
-        <button @click="expanded = ! expanded">1</button>
+        <button :class="{ouvert:expanded, }" @click="expanded = ! expanded">1</button>
         <p x-show="expanded" x-collapse>Lorem ipsum dolor sit amet, consectetur adipisicing
           elit. Laboriosam molestias, exercitationem delectus rerum
           natus necessitatibus.
@@ -30,7 +30,7 @@
     
       </section>
       <section x-data="{ expanded: false }">
-        <button @click="expanded = ! expanded">2</button>
+        <button :class="{ouvert:expanded, }" @click="expanded = ! expanded">2</button>
     
         <p x-show="expanded" x-collapse>Voluptatibus dolorem adipisci hic porro eius, iusto
           voluptate quia, iure maiores officia ut nam error
@@ -41,7 +41,7 @@
     
       </section>
       <section x-data="{ expanded: false }">
-        <button @click="expanded = ! expanded">3</button>
+        <button :class="{ouvert:expanded, }" @click="expanded = ! expanded">3</button>
         <p x-show="expanded" x-collapse>At quisquam non qui ut id numquam tempore eum deleniti
           voluptatem rerum sed culpa, perferendis neque
           voluptates nostrum
