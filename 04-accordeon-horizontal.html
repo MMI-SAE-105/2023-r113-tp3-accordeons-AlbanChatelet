@@ -23,7 +23,7 @@
   #accordeon li {
     width: 107px;
     overflow: hidden;
-    transition: widht.2s;
+    transition: widht 0.5s;
     background-color: #eee;
     list-style-type: none;
     margin: 3px;
@@ -39,13 +39,16 @@
   #accordeon li figure {
     margin: 0%;
     display: flex;
+    width: 317px;
   }
     
 
   #accordeon li figure figcaption {
     width: 200px;
     padding: 10px;
-    vertical-align: auto;
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
       
   }
 
@@ -54,6 +57,10 @@
     margin: 0%;
     padding: auto;
       
+  }
+
+  ul#accordeon li:hover {
+  flex: 3; 
   }
 
     
