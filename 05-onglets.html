@@ -11,26 +11,24 @@
   <body>
     <h1>Onglets</h1>
 
-    <div id="onglets" x-data="{
-     ouvert : 1,
-    }">
-      <ul role="tablist" id="onglet" class="ul" >
-        <li role="tab" :class="{'actif':ouvert === 1,}" @click="ouvert = 1">Onglet 1</li>
-        <li role="tab" :class="{'actif':ouvert === 2,}" @click="ouvert = 1">Onglet 2</li>
-        <li role="tab" :class="{'actif':ouvert === 3,}" @click="ouvert = 1">Onglet 3</li>
+    <div id="onglets" x-data="{ouvert : 1,}">
+      <ul role="tablist" id="accordeon" >
+        <li role="tab" :class="{actif:ouvert === 1,}" @click="ouvert = 1">Onglet 1</li>
+        <li role="tab" :class="{actif:ouvert === 2,}" @click="ouvert = 1">Onglet 2</li>
+        <li role="tab" :class="{actif:ouvert === 3,}" @click="ouvert = 1">Onglet 3</li>
       </ul>
 
 
       <div>
-        <div role="tabpanel" :class="{actif:ouvert === 1,}">
+        <div role="tabpanel" x-show="ouvert === 1">
           <h1>Panneau 1</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, recusandae odit maiores vero possimus corrupti dicta nihil nam dolorum doloremque! Quasi ullam itaque consequuntur quidem laudantium. Adipisci ducimus dolor culpa.</p>
         </div>
-        <div role="tabpanel" :class="{actif:ouvert === 2,}">
+        <div role="tabpanel" x-show="ouvert === 2">
           <h1>Panneau 2</h1>
           <p>Neque labore explicabo iste iure similique eum saepe doloremque architecto laborum tempora molestias qui est minus quia ea, praesentium, nostrum temporibus quibusdam placeat, corrupti consectetur ducimus! Laudantium animi quo velit.</p>
         </div>
-        <div role="tabpanel" :class="{actif:ouvert === 3,}">
+        <div role="tabpanel" x-show="ouvert === 3">
           <h1>Panneau 3</h1>
           <p>Harum veritatis, unde quos ipsa, numquam quas aliquid similique architecto ipsam maxime repudiandae dolor magnam ut doloremque ab minus saepe facere excepturi odit magni. Natus ipsum perspiciatis quaerat fuga similique!</p>
         </div>
