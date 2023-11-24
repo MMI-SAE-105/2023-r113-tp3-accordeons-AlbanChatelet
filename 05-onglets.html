@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Onglets</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
     <div id="onglets" x-data="{
      ouvert : 1,
     }">
-      <ul role="tablist">
+      <ul role="tablist" id="onglet" class="ul" >
         <li role="tab" :class="{'actif':ouvert === 1,}" @click="ouvert = 1">Onglet 1</li>
         <li role="tab" :class="{'actif':ouvert === 2,}" @click="ouvert = 1">Onglet 2</li>
         <li role="tab" :class="{'actif':ouvert === 3,}" @click="ouvert = 1">Onglet 3</li>
